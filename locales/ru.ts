@@ -5,7 +5,7 @@ export const ru = {
   hangulModeTitle: "Корейский алфавит (Хангыль)",
   hangulModeDesc: "Интерактивный гид по буквам, слогам и правилам чтения.",
   englishModeTitle: "Английский для путешествий",
-  englishModeDesc: "Изучайте полезные слова и фразы уровня B1-B2 в контексте.",
+  englishModeDesc: "Практикуйте произношение полезных фраз для поездок.",
   backToHome: "На главный",
   
   // Header
@@ -42,7 +42,7 @@ export const ru = {
     {
         title: "Озвончение",
         description: "Глухие согласные ㄱ, ㄷ, ㅂ, ㅈ озвончаются (становятся похожими на г, д, б, дж) когда оказываются между двумя гласными звуками.",
-        example: "가구 [кагу], 바да [пада], 나비 [наби]"
+        example: "가구 [кагу], 바다 [пада], 나비 [наби]"
     },
     {
         title: "Палатализация (구개음화)",
@@ -69,15 +69,17 @@ export const ru = {
   speechError: "Ошибка распознавания: {error}",
 
   // English Practice View
-  englishPracticeTitle: "Практика английского: Путешествия",
-  selectCorrectWord: "Выберите правильное слово, чтобы заполнить пропуск:",
-  checkAnswer: "Проверить",
-  nextQuestion: "Следующий вопрос",
-  correctExclamation: "Верно!",
-  incorrectExclamation: "Неверно",
+  englishPracticeTitle: "Практика произношения: Путешествия",
+  englishPracticeHint: "Нажмите на микрофон и произнесите фразу на английском.",
+  englishIncorrect: 'Попробуйте еще раз для лучшего результата.',
+  nextQuestion: "Далее",
   explanation: "Пояснение",
   completed: "Поздравляем!",
   completedMessage: "Вы завершили все упражнения. Отличная работа!",
   restart: "Начать заново",
-  questionOf: "Вопрос {current} из {total}",
+  questionOf: "Фраза {current} из {total}",
+  analyzing: "Анализирую...",
+  yourScore: "Ваш балл",
+  feedback: "Рекомендации",
+  geminiError: "Не удалось получить оценку. Попробуйте снова.",
 };

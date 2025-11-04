@@ -29,7 +29,7 @@ declare global {
 export type SpeechRecognitionError = 'unsupported' | 'permission-denied' | 'network' | 'no-speech' | 'aborted' | 'audio-capture' | 'bad-grammar' | 'language-not-supported' | 'not-allowed' | 'service-not-allowed' | 'unknown';
 
 
-const useSpeechRecognition = () => {
+const useSpeechRecognition = (lang: string = 'ko-KR') => {
   const [isListening, setIsListening] = useState(false);
   const [transcript, setTranscript] = useState('');
   const [error, setError] = useState<SpeechRecognitionError | null>(null);
@@ -44,7 +44,7 @@ const useSpeechRecognition = () => {
 
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
     const recognition = new SpeechRecognition();
-    recognition.lang = 'ko-KR';
+    recognition.lang = lang;
     recognition.interimResults = false;
     recognition.continuous = false;
     recognition.maxAlternatives = 1;
@@ -75,7 +75,7 @@ const useSpeechRecognition = () => {
             recognitionRef.current.abort();
         }
     };
-  }, [hasSupport]);
+  }, [hasSupport, lang]);
 
   const startListening = () => {
     if (recognitionRef.current && !isListening) {

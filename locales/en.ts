@@ -5,7 +5,7 @@ export const en = {
   hangulModeTitle: "Korean Alphabet (Hangul)",
   hangulModeDesc: "An interactive guide to letters, syllables, and reading rules.",
   englishModeTitle: "English for Travel",
-  englishModeDesc: "Learn useful B1-B2 vocabulary and phrases in context.",
+  englishModeDesc: "Practice pronouncing useful phrases for your trips.",
   backToHome: "Back to Home",
 
   // Header
@@ -69,15 +69,17 @@ export const en = {
   speechError: "Recognition error: {error}",
 
   // English Practice View
-  englishPracticeTitle: "English Practice: Travel",
-  selectCorrectWord: "Select the correct word to fill in the blank:",
-  checkAnswer: "Check Answer",
-  nextQuestion: "Next Question",
-  correctExclamation: "Correct!",
-  incorrectExclamation: "Incorrect",
+  englishPracticeTitle: "Pronunciation Practice: Travel",
+  englishPracticeHint: "Press the microphone and say the phrase in English.",
+  englishIncorrect: 'Please try again for a better score.',
+  nextQuestion: "Next",
   explanation: "Explanation",
   completed: "Congratulations!",
   completedMessage: "You have completed all the exercises. Great job!",
   restart: "Restart",
-  questionOf: "Question {current} of {total}",
+  questionOf: "Sentence {current} of {total}",
+  analyzing: "Analyzing...",
+  yourScore: "Your Score",
+  feedback: "Feedback",
+  geminiError: "Could not get feedback. Please try again.",
 };

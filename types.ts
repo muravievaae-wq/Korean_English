@@ -21,9 +21,6 @@ export interface Character {
 }
 
 export interface EnglishExercise {
-  sentence_start: LocalizedString;
-  sentence_end: LocalizedString;
-  options: string[];
-  correct_option: string;
+  sentence: LocalizedString;
   explanation: LocalizedString;
 }
