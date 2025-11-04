@@ -27,29 +27,50 @@ export const en = {
   pronounceExample: "Pronounce example",
 
   // Rules Section
-  phoneticRules: "Main Phonetic Rules",
-  rules: [
-    {
-      title: "Batchim (받침) - Consonant at the end of a syllable",
-      description: "Consonants at the end of a syllable (in the 'basement') are often read differently than at the beginning. Many are devoiced. For example, ㅅ, ㅆ, ㅈ, ㅊ, ㄷ, ㅌ, ㅎ in batchim are all pronounced as [t].",
-      example: "옷 [ot], 있다 [itta], 낮 [nat], 꽃 [kkot], 끝 [kkeut]"
-    },
-    {
-      title: "Assimilation (동화)",
-      description: "Adjacent consonants can influence each other, changing their pronunciation. This is one of the most important rules for natural speech.",
-      example: "국물 [gungmul] (ㄱ before ㅁ is read as ㅇ), 입니다 [imnida] (ㅂ before ㄴ is read as ㅁ)"
-    },
-    {
-      title: "Voicing",
-      description: "Unvoiced consonants ㄱ, ㄷ, ㅂ, ㅈ become voiced (sounding like g, d, b, j) when they are between two vowels.",
-      example: "가구 [gagu], 바다 [bada], 나비 [nabi]"
-    },
-    {
-      title: "Palatalization (구개음화)",
-      description: "Consonants ㄷ and ㅌ, when followed by the vowel ㅣ or a yotated vowel (ㅑ, ㅕ, ㅛ, ㅠ), change to ㅈ and ㅊ respectively.",
-      example: "같이 [kachi], 굳이 [kuji]"
-    }
-  ],
+  phoneticRules: "How to Read and Write in Korean",
+
+  // Syllable Block Rules
+  syllableBuilding: "Building Syllable Blocks in Korean",
+  syllableIntro: "Korean words are made up of syllable blocks. Each block represents one syllable and always contains at least one consonant and one vowel. The consonant 'ㅇ' is used as a silent placeholder if a syllable starts with a vowel sound.",
+  syllableCase1Title: "1. Syllable without a Final Consonant (No Batchim)",
+  syllableCase1Desc: "The structure of the syllable depends on the shape of the vowel.",
+  verticalVowel: "Vertical Vowel (ㅏ, ㅑ, ㅓ, ㅕ, ㅣ)",
+  verticalVowelDesc: "The consonant is written to the left of the vowel.",
+  horizontalVowel: "Horizontal Vowel (ㅗ, ㅛ, ㅜ, ㅠ, ㅡ)",
+  horizontalVowelDesc: "The consonant is written above the vowel.",
+  syllableCase2Title: "2. Syllable with a Final Consonant (With Batchim)",
+  syllableCase2Desc: "If a syllable has a third (or fourth) consonant, it is written at the bottom of the block. This position is called 'Batchim' (받침).",
+  verticalVowelBatchim: "With a Vertical Vowel",
+  horizontalVowelBatchim: "With a Horizontal Vowel",
+
+  // Batchim Rules
+  batchimTitle: "Batchim (받침) - Final Consonant Pronunciation Rules",
+  batchimIntro: "Although any consonant (except ㄸ, ㅃ, ㅉ) can be a Batchim, they are only pronounced as one of 7 representative sounds. This is one of the most crucial reading rules.",
+  batchimTableSound: "Sound",
+  batchimTableLetters: "Batchim Letters",
+  batchimSoundK: "[ㄱ] (k)",
+  batchimSoundN: "[ㄴ] (n)",
+  batchimSoundT: "[ㄷ] (t)",
+  batchimSoundL: "[ㄹ] (l)",
+  batchimSoundM: "[ㅁ] (m)",
+  batchimSoundP: "[ㅂ] (p)",
+  batchimSoundNG: "[ㅇ] (ng)",
+  batchimExample: "Examples:",
+
+  // Advanced Rules
+  advancedRulesTitle: "Advanced Pronunciation Rules",
+  linkingRuleTitle: "Linking (Sound Carry-over)",
+  linkingRuleDesc: "If a syllable ends with a consonant (Batchim) and the next syllable begins with a vowel (i.e., with 'ㅇ'), the sound of the final consonant 'moves over' to the place of the 'ㅇ' in the next syllable. This makes speech flow smoothly.",
+  linkingRuleExample1: "밥 + 은 → [바븐] (ba-beun), not [bap-eun]",
+  linkingRuleExample2: "한국어 → [한구거] (han-gu-geo), not [han-guk-eo]",
+  nasalAssimilationTitle: "Nasal Assimilation (동화)",
+  nasalAssimilationDesc: "Some Batchim consonants change their pronunciation when followed by a nasal consonant (ㄴ or ㅁ) to make them easier to pronounce together.",
+  nasalAssimilationRule1: "ㄱ, ㄲ, ㅋ (in Batchim) + ㄴ/ㅁ → pronounced as [ㅇ] (ng)",
+  nasalAssimilationExample1: "국물 → [궁물] (gung-mul)",
+  nasalAssimilationRule2: "ㄷ, ㅌ, ㅅ, ㅆ, ㅈ, ㅊ (in Batchim) + ㄴ/ㅁ → pronounced as [ㄴ]",
+  nasalAssimilationExample2: "있는 → [인는] (in-neun)",
+  nasalAssimilationRule3: "ㅂ, ㅍ (in Batchim) + ㄴ/ㅁ → pronounced as [ㅁ]",
+  nasalAssimilationExample3: "입니다 → [임니다] (im-ni-da)",
 
   // Practice View (Hangul)
   practiceHint: 'Press the microphone and say the NAME of the letter.',
